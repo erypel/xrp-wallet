@@ -4,22 +4,28 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "dotenv": "^7.0.0",
     "epilogue": "^0.7.1",
     "express": "^4.16.4",
+    "final-form": "^4.12.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
+    "react-final-form": "^4.1.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "sequelize": "^5.1.1",
     "sqlite": "^3.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm-run-all --parallel watch:server start:web",
+    "start:web": "react-scripts start",
+    "start:server": "node src/server",
+    "watch:server": "nodemon --watch src/server src/server",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

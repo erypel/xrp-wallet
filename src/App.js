@@ -7,6 +7,7 @@ import {
 
 import AppHeader from './components/AppHeader';
 import Home from './pages/Home';
+import TransactionHistory from './pages/TransactionHistory';
 
 const styles = theme => ({
   main: {
@@ -23,6 +24,7 @@ const App = ({ classes }) => (
     <AppHeader/>
     <main className={classes.main}>
       <Route exact path="/" component={Home}/>
+      <Route exact path="/transactions" component={TransactionHistory}/>
     </main>
   </Fragment>
 );
