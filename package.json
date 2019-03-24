@@ -4,10 +4,17 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.2",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "epilogue": "^0.7.1",
+    "express": "^4.16.4",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "sequelize": "^5.1.1",
+    "sqlite": "^3.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,5 +30,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
 }
