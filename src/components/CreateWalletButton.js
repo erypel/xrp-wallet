@@ -5,7 +5,7 @@ import {
   Menu,
   MenuItem,
   ListItemText,
-} from 'material-ui/core';
+} from '@material-ui/core';
 
 class CreateWalletButton extends Component {
   state = {
