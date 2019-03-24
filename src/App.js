@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Route } from 'react-router-dom';
 import {
   CssBaseline,
   withStyles,
@@ -22,6 +23,7 @@ const App = ({ classes }) => (
     <AppHeader/>
     <main className={classes.main}>
       <Home/>
+      <Route exact path="/" component={Home}/>
     </main>
   </Fragment>
 );
